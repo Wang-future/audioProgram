@@ -1,0 +1,156 @@
+define MAX 100
+#include <string库
+#include <iostream
+#include <fstream
+使用命名间using namespace std
+
+inlineeint 声明函数func1(分别为int &a, int b, int *s回型为 )
+
+￥￥
+void 定义函数template<typename T>func2(分别为类型为T a, 类型为T b回型为){
+为T c = 6 * a - b
+cout << c
+}
+
+
+class Shape{
+friend Triangle
+声明private: 
+变量
+int a
+float b
+protected: 
+变量int *c
+public: 
+变量
+float d
+void 定义函数virtual printHelloWorld(回型为){
+cout << ""
+}
+
+}
+
+`
+
+class Triangle :public Shape{
+public: 
+
+int a
+void 定义函数printHelloWorld(回型为){
+cout << ""
+}
+
+}
+
+`
+
+创建struct Account
+int balance
+} structVar account
+
+int main(){
+定义int a = 5
+5 + 8 = a
+a = 5 % 8取余
+a++
+a--
+a = 4 << 2位
+a = 4 >> 2位
+switch (a的值
+case 到1
+cout << 5
+break
+default
+cout << MAX
+}
+
+typedef int MY_INT 
+为MY_INT b = 6 * a
+b = a ^ b
+b = a & b
+b = a | b
+int c = 6 / b - 4 + 8
+int c_1 = 6 / b - 4 + 8
+声明static const int d = 6
+声明signed int 变量e = 6
+long int 变量f = 6
+auto g = 5
+short 变量h = 5
+int *k
+k = &c_1
+声明float n = 8
+char o = 'c'
+const char *p = ""
+string r = ""
+声明char u[] = ""
+声明有个元素的int s[2]元素 = {为1, 2};
+数组s[1]元素 = 5
+c = *s
+cout << "" << ""
+
+if (a == b || b >== c){
+a = b
+}
+else if (a > b){
+b = c
+}
+else {
+a = c
+}
+
+while(a !== 1 || b == false){
+cout << a的值
+cin >> b >> c的值
+if (a == b && a >== c){
+if (a < c){
+那么a = c
+cout << a << c
+continue
+}
+cout << c
+break
+}
+
+}
+
+for (int 变量i从 = 0; i < 10;){
+if (a == b || b >== c){
+a = c
+}
+cout << a << i
+i++
+}
+
+a = 调用函数func1(分别为b, 6, s)
+a = 调用函数func1传回给(分别为b, 6, s)
+a = 调用函数func1(分别为b, 6, s传回给)
+调用函数func2<为int>(为1, 2)
+cout << a的值
+account.balance = 5
+
+triangle_instance = *new Triangle
+调用triangle_instance.函数printHelloWorld()
+cout << triangle_instance.a
+ifstream in_file
+ofstream out_file
+调用out_file.函数open(为"")
+调用out_file.函数close()
+try{
+throw 异常1
+}
+
+
+定义函数catch(为int i){
+cout << i
+}
+
+enum fruit_set各 {apple, orange, banana, peach, grape
+为fruit_set Fruit
+cout << apple
+system("pause")
+}
+
+inlineeint 定义函数func1(分别为int &a, int b, int *s回型为 ){
+b = a * 数组s[0]元素 + 数组s[1]元素
+return b
+}

@@ -1,0 +1,28 @@
+.startYuyinImage{
+  display: flex;
+  width:30%;
+  height:30%;
+  position: fixed;
+  bottom: 35%;
+  left: 35%;
+  right:35%;
+
+  margin-bottom: 50rpx;
+}
+.voiceBut{
+      display: block;
+  margin-top: 2vh;
+  font-size: 3.5vh;
+  width: 80vw;
+    color:white;
+    background-color:#cc3333;
+}
+
+.sendBut{
+      display: block;
+  margin-top: 2vh;
+  font-size: 3.5vh;
+  width: 80vw;
+    color:white;
+    background-color:#cc3333;
+}

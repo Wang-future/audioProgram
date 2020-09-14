@@ -1,0 +1,132 @@
+define MAX 100
+#include <string>
+#include <iostream>
+#include <fstream>
+using namespace std;
+inline int func1(int &a, int b, int *s);
+￥￥;
+template<typename T> void func2(T a, T b){
+T c = 6 * a - b;
+cout << c;
+}
+class Shape{
+friend Triangle;
+private: 
+int a;
+float b;
+protected: 
+int *c;
+public: 
+float d;
+virtual void printHelloWorld(){
+cout << "";
+}
+}
+`;
+class Triangle :public Shape{
+public: 
+int a;
+void printHelloWorld(){
+cout << "";
+}
+}
+`;
+struct Account;
+int balance;
+} structVar account
+
+int main(){
+int a = 5;
+5 + 8 = a;
+a = 5 % 8;
+a++;
+a--;
+a = 4 << 2;
+a = 4 >> 2;
+switch (a;
+case 1;
+cout << 5;
+break;
+default;
+cout << MAX;
+}
+typedef int MY_INT ;
+MY_INT b = 6 * a;
+b = a ^ b;
+b = a & b;
+b = a | b;
+int c = 6 / b - 4 + 8;
+int c_1 = 6 / b - 4 + 8;
+static const int d = 6;
+signed int e = 6;
+long int f = 6;
+auto g = 5;
+short h = 5;
+int *k;
+k = &c_1;
+float n = 8;
+char o = 'c';
+const char *p = "";
+string r = "";
+char u[] = "";
+int s[2] = {1, 2};
+s[1] = 5;
+c = *s;
+cout << "" << "";
+if (a == b || b >= c){
+a = b;
+}
+else if (a > b){
+b = c;
+}
+else {
+a = c;
+}
+while(a != 1 || b == false){
+cout << a;
+cin >> b >> c;
+if (a == b && a >= c){
+if (a < c){
+a = c;
+cout << a << c;
+continue;
+}
+cout << c;
+break;
+}
+}
+for (int i = 0; i < 10;){
+if (a == b || b >= c){
+a = c;
+}
+cout << a << i;
+i++;
+}
+a = func1(b, 6, s);
+a = func1(b, 6, s);
+a = func1(b, 6, s);
+func2<int>(1, 2);
+cout << a;
+account.balance = 5;
+Triangle triangle_instance = *new Triangle();
+triangle_instance.printHelloWorld();
+cout << triangle_instance.a;
+ifstream in_file;
+ofstream out_file;
+out_file.open("");
+out_file.close();
+try{
+throw 1;
+}
+catch(int i){
+cout << i;
+}
+enum fruit_set {apple, orange, banana, peach, grape};
+fruit_set Fruit;
+cout << apple;
+system("pause");
+}
+inline int func1(int &a, int b, int *s){
+b = a * s[0] + s[1];
+return b;
+}

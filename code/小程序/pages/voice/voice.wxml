@@ -1,0 +1,30 @@
+<view class="yuyinWrap">
+  <textarea class='yuyinCon' bindinput="conInput" placeholder='请输入内容' value='{{content}}' ></textarea>
+  <!--  -->
+  <view class=''>
+    <button class="voiceBut yuyinBtn {{recordState == true ? 'yuyinBtnBg':''}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
+      <text wx:if="{{recordState == false}}">按住 说话</text>
+      <text wx:else>松开 结束</text>
+    </button>
+  </view>
+  <view>
+  <view class="row-wrap">
+    <picker bindchange="bindCasPickerChange" value="{{choiceIndex1}}" range="{{choices}}">
+        <view>
+          <text>转换：{{choices[choiceIndex]}}</text>
+        </view>
+    </picker>
+    <textarea class='yuyinCon' bindinput="conInput" placeholder='转换内容' value='{{content}}' ></textarea>
+  </view>
+  </view>
+  <view class=''>
+    <button class="sendBut" bindtap="send">
+      <text>转成代码</text>
+    </button>
+  </view>
+  <!-- 开始语音 弹出语音图标表示正在录音 -->
+  <cover-view class = "startYuyinImage"  wx:if="{{recordState == true}}">
+    <cover-image src="../../images/yuyin-min.png"></cover-image>
+    <!-- <cover-view>开始语音</cover-view> -->
+  </cover-view>
+</view>

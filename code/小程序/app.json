@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/homes/home",
+    "pages/details/details",
+    "pages/categorys/category",
+    "pages/single-category/single-category",
+    "pages/index/index",
+    "pages/chat/chat",
+    "pages/getInfo/getInfo",
+    "pages/search/search",
+    "pages/voice/voice"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#cc3333",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "语音=代码",
+    "backgroundColor": "#f0f0f0",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "black",
+    "color": "#000000",
+    "selectedColor": "#cc3333",
+    "list": [
+      {
+        "pagePath": "pages/homes/home",
+        "text": "操作说明",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-select.png"
+      },
+      {
+        "pagePath": "pages/voice/voice",
+        "text": "语音转代码",
+        "iconPath": "/images/category.png",
+        "selectedIconPath": "/images/category-select.png"
+      },
+      {
+        "pagePath": "pages/getInfo/getInfo",
+        "text": "聊天机器人",
+        "iconPath": "/images/personal.png",
+        "selectedIconPath": "/images/personal-select.png"
+      }
+    ]
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

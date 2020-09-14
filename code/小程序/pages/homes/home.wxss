@@ -1,0 +1,58 @@
+@import "../../template/news-item/news-item-template.wxss";
+
+swiper {
+    width: 100%;
+    height: 450rpx;
+}
+
+swiper image {
+    width: 100%;
+    height: 450rpx;
+}
+
+.icon-publish{
+    width: 100rpx;
+    height: 100rpx;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 100;
+}
+
+.info-title{
+    padding-top: 5rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    color: #bebebe;
+}
+
+.search
+{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  width:100%;
+  height:100rpx;
+  background-color:whitesmoke;
+  border:1rpx solid whitesmoke;
+  border-radius: 5rpx;
+
+}
+
+/* 搜索框提示文字样式 */
+.search input
+{
+  font-size:27rpx;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-left:30rpx; 
+}
+
+/* 搜索框小图标 */
+.search image
+{ 
+  width:40rpx;
+  height:40rpx;
+  padding-right:20rpx;
+}

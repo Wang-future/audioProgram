@@ -1,0 +1,15 @@
+<template name="detailsItem">
+    <view class='detail-container'>
+        <text class='news-title'>{{title}}</text>
+        <view>
+            <text class='news-time'>发表时间：{{date}}</text>
+            <text class='news-autor'>作者：{{author}}</text>
+        </view>
+        <image class='news-image' src='{{imgUrl}}'></image>
+        <text class='news-content'>{{text}}</text>
+        <text class='news-content' class='ref' wx:if="{{referenceLink.length > 0}}">引用</text>
+        <block wx:for="{{referenceLink}}" wx:for-item="item" wx:key="{{index}}">
+          <text class='news-content' class='ref'>{{item}}</text>
+        </block>
+    </view>
+</template>

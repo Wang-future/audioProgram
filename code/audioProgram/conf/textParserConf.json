@@ -1,0 +1,4 @@
+{
+  "LTP_PATH" : "./model",
+  "SelfDefineWordsPath": "./data/fenci/fenci.txt"
+}
