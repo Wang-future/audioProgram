@@ -28,11 +28,12 @@ class Actor():
         self.parser = TextParser()
         self.classifier = Classifier()
         self.ruleParser = RuleParser()
+
     def textCheck(self, inputText):
-        return self.myCheck.inputCheck(inputText)
+        return self.myCheck.inputCheck(inputText),inputText
 
     def codeCheck(self, codeText):
-        return self.myCheck.outputCheck(codeText)
+        return self.myCheck.outputCheck(codeText),codeText
 
     # 根据输入的句子生成代码
     def genSenCode(self, senText):
@@ -44,6 +45,7 @@ class Actor():
         for item in codeList:
             label = self.classifier.classify(item)
             # 根据label 使用对应规则生成代码
+
     def genMidCode(self, preText):
         outCodeText = self.Head
 
@@ -56,7 +58,16 @@ class Actor():
 
         # 补齐尾部
         outCodeText += self.End
+
+    # 返回:
+    # retSenList:[] 如果需要用户确认,填充该结构,否则为空即可
+    # retResList:[]
+        # 'ret_code': carryResList[0]
+        # 'text':carryResList[1]
     def toCode(self, seqId, text):
+        # 返回值
+        retSenList = []
+        retResList = []
         # 记录参数
         dict = {}
         dict['seqId'] = seqId
@@ -64,7 +75,12 @@ class Actor():
         strInput = json.dumps(dict)
 
         # check the text
-        text = self.textCheck(text)
+        checkRes,text = self.textCheck(text)
+
+        if not checkRes:
+            retResList[0] = '2'
+            retResList[1] = '输入文本无效,无法通过核验,请重新输入:'+text
+
         log.info('after check text:' + text)
 
         # genMidCode
@@ -74,4 +90,6 @@ class Actor():
         # return code
         lastCode = self.codeCheck(outCodeText)
         log.info('last code:' + lastCode)
-        return lastCode
+
+        # 返回两个数组
+        return retSenList,retResList

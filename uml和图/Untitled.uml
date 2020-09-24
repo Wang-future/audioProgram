@@ -168,8 +168,8 @@
 <XPD:OBJ name="OwnedViews[4]" type="UMLClassView" guid="Vvg2Syq5EEu7YxNLv/B5AwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">328</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">64</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">364</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">68</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">173</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">145</XPD:ATTR>
 <XPD:REF name="Model">sfBDiR7kXE+dLBZUpzmnoQAA</XPD:REF>

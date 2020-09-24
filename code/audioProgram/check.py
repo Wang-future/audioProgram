@@ -5,7 +5,8 @@ import re
 import sys
 sys.path.append(r'../auxClass/')
 from wangLog import log
-
+from classifier import Classifier
+from textParser import TextParser
 
 class Check():
     """用于对输入文本进行校验
@@ -24,10 +25,11 @@ class Check():
             content = f.read()
             self.replaceDict = json.loads(content)
             print(self.replaceDict)
+        self.classifier = Classifier()
+        self.parser = TextParser()
 
-    # 输入检查，目前不进行检查与校正
     def inputCheck(self, text):
-        return text
+        return True
 
     def outputCheck(self, seqId, text):
         # 记录参数
@@ -43,6 +45,25 @@ class Check():
             strinfo = re.compile(key)
             text = strinfo.sub(self.replaceDict[key], text)
         return text
+
+    # 文本检测, 返回分句及其对应的检测结果
+    # 1 代表符合要求,2代表需要模糊匹配或者人机
+    # [["定义变量a","1"],["定义变量a","2"],"定义","1"]
+    def textDetection(self, text):
+        # 进行检查
+        # 先进行分句
+        senList = self.parser.splitText(text)
+        # 获取分类结果
+        retList = []
+        # 逐句获取分类结构
+        for sen in senList:
+            tempRes = self.classifier.simpleClassify(sen)
+            tempList = []
+            tempList.append(sen)
+            tempList.append(tempRes)
+            # 结果存储进retList
+            retList.append(tempList)
+        return retList
 
 if __name__ == '__main__':
     mCheck = Check()

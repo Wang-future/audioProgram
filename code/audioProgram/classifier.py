@@ -14,5 +14,11 @@ class Classifier():
 
             Attributes:
     """
-    def classify(self,text):
+    def simpleClassify(self,text):
+        # 如果是定义类 返回1
+        # 如果是计算类 返回10
+        # 如果是判断类 返回100
+        # 如果是循环类 返回1000
+        # 如果是调用算法类 返回10000
+        #多个分类返回 合并值
         return 1
