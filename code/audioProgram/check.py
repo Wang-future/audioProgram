@@ -46,10 +46,15 @@ class Check():
             text = strinfo.sub(self.replaceDict[key], text)
         return text
 
+    def senRuleDetection(self, senList):
+        None
     # 文本检测, 返回分句及其对应的检测结果
     # 1 代表符合要求,2代表需要模糊匹配或者人机
-    # [["定义变量a","1"],["定义变量a","2"],"定义","1"]
+    # [["定义变量a","1"],["定义变量a","2"],["定义","1"]]
     def textDetection(self, text):
+        # 返回参数
+        ret_code = 0
+        retSenList = []
         # 进行检查
         # 先进行分句
         senList = self.parser.splitText(text)
@@ -58,11 +63,13 @@ class Check():
         # 逐句获取分类结构
         for sen in senList:
             tempRes = self.classifier.simpleClassify(sen)
+            log.info('[分类]:' + sen + ':' + tempRes)
             tempList = []
             tempList.append(sen)
             tempList.append(tempRes)
             # 结果存储进retList
             retList.append(tempList)
+        # 进行分类结果判断
         return retList
 
 if __name__ == '__main__':

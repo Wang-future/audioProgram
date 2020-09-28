@@ -60,6 +60,7 @@ class Actor():
         outCodeText += self.End
 
     # 返回:
+    # seqId
     # retSenList:[] 如果需要用户确认,填充该结构,否则为空即可
     # retResList:[]
         # 'ret_code': carryResList[0]

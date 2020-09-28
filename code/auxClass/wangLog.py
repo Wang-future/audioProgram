@@ -7,7 +7,7 @@ import time
 import os
 import sys
 cur_path = os.path.dirname(os.path.realpath(__file__))
-log_path = "D:/王/硕士/项目/audioProgram/logData/"
+log_path = "../../logData/"
 # 如果不存在这个文件夹，就自动创建一个
 if not os.path.exists(log_path):
     os.mkdir(log_path)
