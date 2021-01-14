@@ -1,0 +1,500 @@
+发出信号`信号.SIGUSR1`到当前进程
+将十六进制字符串“4a4b4c”解码为UTF-8。
+检查列表“myList”中的所有元素是否相同
+将字符串“Python”、“Python:”和“Very Good”之间的空格数设置为“20”`
+如何将字符串从CP-1251转换为UTF-8？
+去掉字典中的None值`kwargs`
+去掉字典中的None值`kwargs`
+捕获一系列系统命令的最终输出`ps-ef | grep something | wc-l`
+连接字符串列表`['a'，'b'，'c']`
+查找系列“s1”和系列“s2”之间的交集数据`
+将http头发送到`client`
+格式化datetime字符串“when”以仅提取日期
+将多行字符串“inputString”拆分为单独的字符串
+将多行字符串“a\n b\r\n c”按新行字符拆分\n`
+用冒号连接列表`b`的元素：
+从django model`Entry中的queryset获取第一个对象`
+计算2D numpy数组所有行的和
+使用“始终”操作启用警告
+将列表“l”的项与空格“”连接起来
+'运行脚本'你好，派瑞'带参数'htmlfilename.htm文件名'在终端上使用python可执行文件
+如何用python解析包含毫秒的时间字符串？
+将带有点和逗号的字符串“my\u string”转换为浮点数“my\u float”`
+将带点和逗号的字符串“123456.908”转换为浮点数
+在python脚本中设置pythonpath。
+拆分字符串'Words，Words，Words'。使用正则表达式'（\\W+）'
+打开一个文件`输出.txt`在附加模式下
+“下载文件”http://www.example.com/songs/mp3.mp3在HTTP上并保存到“mp3.mp3”
+通过HTTP下载文件“url”，并保存到“file\u name”`
+下载文件https://duckduckgo.com/？q…..锡圆+岩石+德克萨斯州'关于HTTP
+download a file url'over HTTP
+通过HTTP下载文件“url”，并保存到“10MB”
+argparse将带有标志'--version'和版本操作'%（prog）s 2.0'的参数添加到parser`parser`
+从词典中删除键“c”`d`
+通过合并dataframes`split_df`和`csv_df`的列“key”来创建新的DataFrame对象，并将dataframes`split_df`和`csv_df`中的列重命名为后缀分别为`u left`和`u right`
+用“4”分隔符按空格分隔字符串“s”
+读取键盘输入
+在应用程序上启用调试模式`app`
+python保存列表`mylist`到文件对象'保存.txt'
+将矩阵“P”与scipy中的三维张量“T”相乘
+创建大小为`（3,3,3）的零的三维数组`
+切掉句子的最后一个字`
+将标量“x”转换为数组
+对嵌套列表的所有元素求和`L`
+将十六进制字符串“470FC614”转换为浮点数
+对字典“my\u dict”中的所有键将每个值乘以“2”`
+运行bash脚本'睡眠.sh'
+用逗号`，连接列表'l'中的元素`
+从列表中生成逗号分隔的字符串`myList`
+反转包含1到10的列表
+从字符串“灯、包、镜”中删除子字符串“包”
+颠倒字符串中由“.”分隔的单词的顺序`
+使用格式“%Y-%m-%d%H:%m:%s”将表示为毫秒的历元时间“s”转换为字符串。%f
+分析时间“1236472051807”以格式化“%Y-%m-%d%H:%m:%S”
+获取当前日期前7天的日期
+对list`data中每个列表的索引`column`处的元素求和`
+列表的求和列`array`
+将二进制字符串“your string”编码为base64代码
+将每个列表中键相同的字典“dicts”列表合并到一个字典中
+通过将嵌套值与同一键`k串联，将嵌套字典“dicts”合并到平面字典中`
+如何在Flask视图中获取url参数
+识别列表中的重复值`mylist`
+将目录“apps”插入目录“\u”文件__`
+修改系统路径对于python模块`subdir`
+在SQLite3表中插入“None”值。
+展平列表`list\ of\ menuitems`
+将集合“b”的元素附加到列表“a”中`
+在Python中将集合的元素附加到列表中
+将dataframe`df`的数据写入文本文件`np.txt文件`
+将数据框“df”的内容写入文本文件“c:\\data”\\熊猫.txt'
+按最后出现的字符拆分字符串“x”`-`
+获取字符“-”之前的字符串的最后一部分
+使用FTP上载文件
+使用selenium python脚本向id为“XYZ”的隐藏web元素添加一个
+创建包含数组`[2，3，4]`和数组`[1，5，2]各自元素的最大值的数组`
+打印列表`l`并将前3个元素移到列表末尾
+在目录“.”中循环文件
+循环目录中的文件`source`
+创建一个随机整数列表
+在Python中使用%f和strftime（）获得微秒
+Google App Engine执行GQL查询'SELECT*FROM Schedule WHERE station=$1'，带参数`foo.key键()`
+使用正则表达式筛选以字母“f”开头的行。
+将二维列表“tab”打印为带分隔符的表
+熊猫：基于多列值删除数据框“df”中的行
+设置变量格式`自我目标`以及`自我惩罚`使用字符串格式
+用变量“goals”和“pouldings”格式化字符串“（{}goals，${}）”`
+格式字符串“（{0.goals}目标，${0.pouldings}）”
+将列表列表`L`转换为整数列表
+将列表“L”中每个列表的元素组合成单个整数的数字
+将“L”列表转换为整数列表
+将由特殊字符“\n”连接的列表“行”的元素写入文件“myfile”`
+从基于谓词“X”或“N”的列表中删除元素
+使用regex从字符串“text”中删除重复的单词
+对数据帧中每列中的非零值进行计数
+搜索与正则表达式模式“（”匹配的字符串？<!蒸馏器）\\\\AcroTray\\.exe'在字符串'C:\\SomeDir中\\AcroTray.exe'
+将字符串“QH QD JC KD JS”拆分为一个空白列表
+在xml字符串'line'中搜索正则表达式模式'>.*<'的出现`
+删除文件名中的所有内容`
+使用格式“%Y-%m-%d%H:%m:%S.%f”将字符串转换为日期时间
+在列表列表“thelist”中查找第一个元素等于“332”的列表的索引`
+将字符串“text”放低，并将非字母数字字符从空格中删除
+从字符串“text”中删除除空格以外的所有非字母数字字符，并将其放低
+在数组“x”和“y”的matplotlib标签中下标文本“H20”，下标为“2”。
+在数组“x”和“y”的matplotlib标签中下标文本“H20”，下标为“2”。
+如果子列表长度等于3，则在列表“mylist”上循环
+初始化100个对象的列表`lst`Object（）
+创建包含100个object实例的列表`lst`object`
+获取其父级具有css`someclass的具有`href`属性的子标记的内容`
+基于两个数据帧中“Date\u Time”列的匹配值，将数据帧“df1”中的数据与数据帧“df2”中的数据连接起来
+使用“%s”运算符在字符串中打印变量值“str1”
+在python中用分隔符拆分字符串
+检查目录“directory”是否存在，必要时创建它
+检查目录“path”是否存在，必要时创建它
+检查目录“path”是否存在，必要时创建它
+检查目录“path”是否存在，必要时创建它
+将字符串“text”中的单独单词“H3”替换为“H1”
+将字符串“aas30dsa20”中的ASCII字母替换为空字符串“”
+使用lambda函数仅从字符串“aas30dsa20”获取数字
+访问beautifulsoup中名为“name”的标记`
+获取PyMongo cursor中键值对的字典records`
+通过连接来自矩阵A和矩阵B的数据来创建新的矩阵对象
+用numpy表示两个矩阵“A”和“B”
+获取文件中的字符数`filepath`
+计算列表中项目“a”的出现次数`l`
+计算列表中项目的出现次数`l`
+计算列表中项目的出现次数`l`
+计算列表中项目的出现次数`l`
+计算列表中项目“b”的出现次数`l`
+将文件`srcfile`复制到目录`dstdir`
+在字典“x”中查找与最大值关联的键，而该键是非零值
+获取与其字典中的值0不关联的最大键`x`
+获取字典“x”中非零值的最大键
+将光标放在文件的开头
+将数据框“df”的列“b”和列“a”中的值合并到数据框“df”的列“c”中`
+从字典中删除键“he”`
+将“MyModel”中的datetime字段更新为现有的“timestamp”加上100年
+将列表`['it']`和列表`['was']`以及列表`['peating']`合并到一个列表中
+在数字中用前导零递增值`x`
+检查数据帧“df”的索引是否已排序
+将元组“t”转换为列表
+将列表“t”转换为元组
+将元组“level1”转换为列表
+将pprint对象“dataobject”的输出发送到文件“logFile”`
+获取“BoolCol”列中的行索引
+创建一个列表，其中包含数据帧“df”中“BoolCol”列的值等于True的行的索引
+获取列“BoolCol”值与True匹配的行的索引列表
+获取数据框“df”中的行索引哪个列“BoolCol”与值True匹配
+将工作目录更改为目录`owd`
+将字符串“testfield”中的数据插入sqlite db`c`
+将字符串“\\x89\\n”解码为普通字符串
+将原始字符串“raw\u string”转换为普通字符串
+将原始字符串“raw\u byte\u string”转换为普通字符串
+将字符串“s”拆分为所有重复字符的字符串
+用x，y位置散点图`np.random.随机（100）`面颜色等于零
+用空圆圈做散点图
+使用beautifulsoup删除id为“main content”的div
+筛选列`ids中包含关键字`ball`的行`
+将0级索引转换为数据框中的列`df`
+将数据框“df”中的索引添加到列“index1”`
+将数据帧中的索引转换为列
+使用扩展切片从列表“b”获取列表项的反向
+将数组“a”中的每个元素与数组“b”中相同索引处的元素作为元组连接起来
+压缩两个二维数组`a`和`b`
+将list`list\ of\ int`转换为逗号分隔的字符串
+使用原始数据“data”发送post请求，并使用“username”和“password”进行基本身份验证`
+查找字符串“abcd}def}”中最后出现的字符“}”
+使用列表理解迭代列表`[1，2，3]`
+从字典列表“d”到元组列表中提取键为“x”和“y”的所有值
+从文件“”获取不带扩展名的文件名赫曼斯.txt'
+通过将元组“x”中的每两个相邻元素作为键/值对添加到字典中来创建字典
+创建一个包含扁平列表“[['a'、'B'、'C']、['D'、'E'、'F']、['G'、'H'、'I']]的列表`
+选择数据框“df”列“closing\u price”中两个值99和101之间的行
+将数据框`df中出现的所有换行符`\n`替换为`<br>``
+用数据框`df中的字符串`<br>`替换所有出现的字符串`\n``
+创建一个包含字符串“word”中每两个相邻字母作为其元素的列表
+使用lambda函数从字符串“word”中获取对的列表
+从字符串中提取url`myString`
+从字符串中提取url`myString`
+使用regex从字符串“mystring”中删除所有特殊字符、标点和空格
+创建一个DatetimeIndex，包含从日期“2016-01-01”开始的每月第二个星期五的13个时段
+在python中创建具有3行2列的多维数组“matrix”
+用下划线替换空格
+获取文件“mydir”的绝对文件路径/myfile.txt文件'
+在空白处拆分字符串“我的\u字符串”
+从文件中获取不带扩展名的文件名`filename`
+获取一个列表，其中包含列表“l”中每个元素“i”加上前面的元素的总和
+将字符串“Docs/src/Scripts/temp”拆分为“/”保留“/”
+洗牌numpy数组“r”的列
+将列“B”中的所有值复制到数据帧“df”中的新列“D”
+在嵌套的json“data”中查找另一个键“B”中的键未知的值。
+字符串“string”的检查字符是函数“predicate”的真谓词`
+使用python确定驱动器上的文件数
+如何从python中的SQLite查询中获得单个结果？
+将字符串“user\u input”转换为整数列表“user\u list”`
+通过用逗号拆分字符串“user”来获取整数列表
+按两个条件对Python列表排序
+根据函数“cmpfun”按降序对对象列表“ut”排序
+基于每个对象的“count”属性反转列表“ut”
+按对象的“count”属性对对象列表“ut”进行逆序排序
+click a href button'Send'with selenium
+click a href button having text Send InMail`with selenium
+click a href button with text's Send InMail'with selenium
+将int“i”转换为字符串，concat转换为字符串“ME”
+对数据帧中的数据进行排序
+将行“#test firstline\n”前置到文件“infile”的内容，并另存为文件“outfile”
+按元组中值的长度对列表“l”排序
+按以“d”结尾的单词拆分字符串“s”
+如果字符串`foobarrr`包含regex`ba[rzd]，则返回`True``
+删除列表中的重复项`t`
+删除列表中的重复项`source\u list`
+删除列表中的重复项`abracadabra`
+将数组“a”转换为列表
+将numpy矩阵“a”的第一行转换为列表
+在“soup”中，获取带有text content“Address”的“td”标记的同级内容：`
+将列表“l”中每个元组的元素转换为以字符分隔的字符串`@`
+将列表“l”中的每个元组转换为一个字符串，用“@”分隔元组的元素
+从Selenium驱动程序的当前网页获取html
+获取字符串“teststr”列表中具有正则表达式模式“\\d+[xX]”的所有匹配项`
+从“A”列中选择值，其中“B”列中的相应值将大于50，而“C”列中的值将等于“df”数据框中的900`
+根据字典的键和项按升序对字典“o”排序
+获取已排序的dict键列表`d`
+如何在Python中按键对词典排序
+将字符串“1”转换为整数
+函数将字符串转换为整数
+将“T1”中的项转换为整数
+调用shell脚本`/测试.sh`使用子流程
+使用子进程调用shell脚本“notepad”
+通过交替元素组合列表“l1”和“l2”
+编码字符串“要编码的数据”
+将字符串“要编码的数据”编码为“ascii”编码
+“分析选项卡分隔的CSV文件”文本.txt'进入列表
+获取对象“my\u object”的属性“my\u str”`
+按键将一组dict`LD`组合成一个dict
+在Python中，如何对元组列表中每个元组的第一个值求和？
+将unicode字符串u“{code1'：1，'code2'：1}”转换为字典
+查找字符串“mystring”中以“$”符号开头的所有单词
+删除字符串中的任何url`text`
+将数组“[1，3，4]”中不存在的数组“A”中的所有元素替换为零
+计算二维数组中跨维度的平均值`a`
+从python运行r script“/pathto/MyrScript.r”
+运行r script'/usr/bin/Rscript--vanilla/pathto/MyrScript.r'
+向csv文件添加头
+用行平均值替换数据帧“df”中的nan
+将unix时间戳“1347517370”转换为格式化字符串“%Y-%m-%d%H:%m:%S”
+从派生类“derived”调用基类的类方法“do”`
+选择Numpy ndarray“a”中的行，其中第一列中的值为0，第二列中的值为1
+将由一个或多个空格分隔的单词分隔到一个列表中
+列表中最长元素的长度`words`
+获取与列表“result”中第一个字典的unicode键“from\u user”关联的值`
+从文件中检索每一行文件.txt'作为列表
+用字典中的值交换键`a`
+打开文件`path/to/file_名称.ext`在写入模式下
+如何按对象对组的列中的不同值进行计数？
+检查字典“dict1”中是否有任何键以字符串“EMP”开头$$`
+从字典“dict1”中创建键以“EMP$$”开头的值列表
+将熊猫系列“sf”转换为熊猫数据框“df”，其中列为“email”和“list”`
+打印由制表符分隔的列表元素\t`
+使用utf-8打印unicode字符串“\xd0\xbf\xd1\x80\xd0\xb8”
+正确编码字符串“Sopet\xc3\xb3n”中的拉丁字符
+将图像“image”的大小调整为宽度，高度为“（x，y）”，过滤器为“ANTIALIAS”`
+正则表达式，在字符串的中间找到“n”`
+以百分比形式显示浮点值`1/3*100`
+按“标题”键对字典“mylist”列表排序`
+按dict值“title”对dict列表“l”排序
+按关键字'title'、'title\u url'、'id'的值按升序排列字典列表。
+找出列表“l1”和列表“l2”的每个元素之间的10个最大差异`
+BeautifulSoup在类为“starGryB sp”的HTML字符串“soup”中查找所有“span”元素
+将数据帧“df”中的记录写入架构“a\u schema”中的表“test”
+从字符串中提取括号`s`
+从列表“L”中删除重复元素
+读取不带换行符的文件
+获取项目1在`testlist中的位置`
+获取项目1在`testlist中的位置`
+获取项目1在`testlist中的位置`
+获取项目1在`testlist中的位置`
+获取项目1在`testlist中的位置`
+获取项“element”在列表“testlist”中的位置`
+获取项“element”在列表“testlist”中的位置`
+在元组列表中查找具有最大第二个元素的元组的第一个元素`
+从列表中索引1处具有最大值的元组中获取索引0处的项`lis`
+延迟1秒
+将元组列表`L`转换为字符串
+Django将字段“b”的默认值设置为“0000000”
+根据lis`list5`元素的度值按升序排序
+如何在python中执行二次排序？
+将列表转换为生成器对象
+从列表“oldlist”中删除具有列表“removelist”中提到的索引号的元素`
+打开一个文件`yourfile.txt文件`在写入模式下
+从对象“obj”获取属性“attr”`
+将元组中的元组转换为元组
+将元组“（'aa'，），（'bb'，），（'cc'，）”的元组转换为一行中的列表
+Python：如何替换数据帧列中的字符？
+解压缩列表“[（'a'，1），（'b'，2），（'c'，3），（'d'，4）]`
+解压缩列表“[（'a'，1），（'b'，2），（'c'，3），（'d'，4）]`
+解压缩列表`original`
+解压“original”列表并返回生成器
+解压缩列表“[（'a'，1），（'b'，2），（'c'，3），（'d'，4），（'e'，）]`
+解压缩列表“[（'a'，1），（'b'，2），（'c'，3），（'d'，4），（'e'，）]”，并用“无”填充空结果
+将“Decimal（'3.9'）”编码为JSON字符串
+将键“mynewkey”添加到值为“mynewvalue”的字典“d”
+将键“a”添加到值为1的字典“data”
+将键“a”添加到值为1的字典“data”
+将键“a”添加到值为1的字典“data”
+在矩阵中查找最大值`matrix`
+小数点后2位精度的整数
+从html字符串中提取ip地址
+按列“A”中多次出现的值筛选数据帧“df”
+将文件“myfile”中的每一行追加到列表中
+从文件中获取整数列表`lst``文件名.txt`
+将带有图像“mappable”的颜色栏添加到绘图“plt”`
+在dataframe`df的“text”列中计算最频繁的100个单词`
+Python使用regex拆分字符串
+生成元组`（1，2，3）的所有2元素子集`
+获取值日期时间.今天（）在UTC时区
+通过从列表列表“list1”中删除空列表来获取新列表“list2”`
+创建“list2”以包含列表“list1”中的列表，排除“list1”中的空列表`
+Django用JSON响应`data`
+获取字符串中未括在方括号内的所有文本`example\u str`
+使用正则表达式获取字符串“example\u str”中没有方括号的所有文本
+在字符串'（zyx）bc'中，获取括号之间的任何字符作为单个匹配，外部的任何字符作为单个匹配
+匹配正则表达式“\\（*？）\\)|（\\w）'带字符串'（zyx）bc'
+用字符串`（zyx）bc中的交替运算符` |`匹配多个正则表达式模式`
+将列表“elements”中的每个字符串格式化为模式“{0}%”
+打开带有参数“arguments”的后台进程“background process”
+从字典“mydict”w.r.t.键列表“mykeys”中获取值列表
+将列表“[（'Name'，'Joe'），（'Age'，22）]”转换为字典
+平均每两列数组数据`
+双反斜杠转义字符串中的所有双引号`s`
+将字符串拆分为单词和空格的列表
+在panda数据框上绘制堆积条形图
+反转字典中的键和值`myDictionary`
+在字符串“myList”列表中查找包含子字符串“how”和“what”的元素的索引。
+检查对象“obj”是否为字符串
+检查对象“o”是否为字符串
+检查对象“o”是否为字符串
+检查对象“o”是否为字符串
+检查“obj\u to\u test”是否为字符串
+将列表“list1”附加到“list2”
+将列表`mylog`附加到`list1`
+将工作表“a”附加到“c”，
+将列表“mylog”中的项附加到“list1”`
+将列表“a”中具有索引“[0][0][0][2]”的元素元组附加到列表“b”`
+在flask config中用“Your\u SECRET\u string”初始化“SECRET\u KEY”`
+将pandas中的一系列元组解压到列名称为“out-1”和“out-2”的数据帧中
+在“stocks\u list”列表中查找元素“MSFT”的索引`
+将matplotlib plot“ax”的xtick标签旋转45度，使长标签可读
+从字符串中删除符号`s`
+获取脚本的当前目录
+使用regex从字符串“str”中查找匹配的八进制字符
+基于正则表达式模式“[]”（？=[A-Z]+\\b）'
+在每个空格处拆分字符串“input”，后跟一个大写字母
+将多部分编码的文件“files”发送到带有标题“headers”和元数据“data”的url“url”`
+在Python3中将字节“bytes\”写入文件“filename”
+从列表“lst”中获取一个列表，其值映射到字典“dct”`
+在数据框`x的“name”列中查找重复的名称`
+将float 1.923328437452截断为3位小数
+根据列表`li中每个列表第二个元素的日期值，按降序对列表`li`排序`
+将径向记号以135度角放置在绘图“ax”中
+检查路径“my\u path”是否为绝对路径
+获取词典中的键数`yourdict`
+计算字典文件中的键数`
+熊猫数据帧按“id”获取每个组的第一行
+将第一列中的列表拆分为多列，其他列也保留在数据框中
+从字符串中提取属性'src=“js/（[^”]*\\bjquery\\b[^”]*）'`data`
+列表`[''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''`
+用参数调用子进程`c:\\Program Files\\VMware\\VMware Server\\VMware-命令行`可能包含空格的
+在python中反转优先级队列'q'，而不使用类
+在数据框“df”的“group”列中绘制数据条形图，并根据列表“color”进行颜色编码`
+在字符串“data”中查找正则表达式模式“（[a-fA-F\\d]{32}）”的所有匹配项`
+获取列表的长度`my\u list`
+获取数组长度`l`
+获取数组的长度`s`
+获取“我的元组”的长度`
+获取“我的\u字符串”的长度`
+从字符串“\\a”中删除转义字符
+在一次传递中，将字符串“obama”中的每个“a”替换为“b”，将每个“b”替换为“a”。
+删除目录树“/文件夹\u名称”
+基于“my\u dt”列中的值，在数据框“data”中创建新列“weekday”`
+按值反向排序计数器`x`
+按值反向排序计数器`x`
+将numpy数组“b”附加到numpy数组“a”
+numpy沿第一个轴连接两个数组“a”和“b”
+numpy沿第二个轴连接两个数组“a”和“b”
+numpy沿第一个轴连接两个数组“a”和“b”
+numpy沿第一个轴连接两个数组“a”和“b”
+获取主机的地址信息谷歌网站'离子端口80'
+将值为“sat”的列“day”添加到数据框`df`
+返回django中未经授权的401
+将文件夹“where”设置为默认模板文件夹
+如何在SQLAlchemy中插入t1（从t2选择*？
+对列表“c2”进行排序，使第三行排在第一位
+在Python中排序列表
+在Python中排序列表
+将“Arial”字体设置为在matplotlib中显示非ascii字符
+将数据帧“df”的DateTime列“date”转换为序号
+获取Selenium WebElement的html源代码`element`
+获取数据帧中键“bob”的整数位置
+从python脚本打开“gnome”终端并运行“sudo apt get update”命令。
+将键为“third\u key”且值为1的项添加到字典“my\u dict”中`
+声明数组
+将项目“12”插入列表“my'u list”
+在列表“myList”的开头添加一个条目“wuggah”`
+将十六进制字符串表示形式转换为实际字节
+选择数据框的最后一列`df`
+从数据帧“df”中获取第一个值，其中列“Letters”等于“C”
+将两个列表`[1，2，3]`和`[4，5，6]`转换为矩阵
+获取类型`i`
+确定变量的类型`v`
+确定变量的类型`v`
+确定变量的类型`v`
+确定变量的类型`v`
+获取变量类型`variable\u name`
+获取发电机的第5项
+以字符串格式打印字符串“word”
+使用空格连接字符串列表'list'
+创建包含两个空列表的列表`y`
+将文件“C:/name/MyDocuments/numbers”读入“data”列表`
+删除字符串“it is ice”中出现的所有字符“i”
+删除字符串“it is ice”中字符“i”的所有实例
+删除字符串“it is ice”中的所有字符“i”
+如何在python中删除字符串中的所有字符实例？
+删除索引“1”处列中具有NaN的数据帧“df”的行
+从列表“myList”中获取字段“n”值为30的元素
+将字符串列表“intstringlist”转换为整数列表“nums”`
+将字符串数字列表转换为整数列表
+不换行打印“.”
+舍入'2.52*100'的乘积，并将其转换为整数
+查找“/mydir”目录下扩展名为“.txt”的所有文件
+查找“/mydir”目录下扩展名为“.txt”的所有文件
+查找“/mydir”目录下扩展名为“.txt”的所有文件
+打印不带图例的数据框`df`
+循环IP地址范围“192.168.x.x”
+循环IP地址范围“192.168.x.x”
+循环IP地址范围“192.168.x.x”
+将列表中每个布尔元素的二进制值的相应十进制值相加`x`
+在文件“target”的一行中写入多个字符串“line1”、“line2”和“line3”`
+将“data”列表转换为平面列表
+在字符串“foo\nbar”中将新行字符打印为“\n”`
+删除字符串中的最后一个逗号字符'，'`
+计算数组“x”中每个元素的平均值，该元素位于该元素之前
+获取numpy数组中每两个连续值的平均值的数组`x`
+从文件加载包含“utf-8”的数据`新建.txt`放入numpy数组`arr`
+按key`time的值对dicts`l`进行反向排序`
+根据“time”键按降序排列字典“l”的列表
+获取与regex（Hel | Just）匹配的数据帧'df'行
+在“your\u string”中找到两个特殊字符“[”和“]”之间的字符串
+如何用Python创建yyyymmdd格式的日期字符串列表？
+计算字符串“brown”在字符串“The big brown fox is brown”中出现的次数
+解码json字符串`请求.正文`到python dict
+从url`url`下载文件并保存在file`file\u name下`
+按空格拆分字符串`text`
+拆分字符串`text`by“，”
+按空格将字符串“line”拆分为列表
+将列表“s”中与ascii字母关联的点字符“.”替换为空格“”
+基于每个字符串的第二个索引对列表进行排序`
+使用“|”调用多个bash函数“vasp”和“tee|u output”
+从列表中删除所有字符串`lst`
+从列表“lst”中获取除字符串以外的所有元素。
+按字典键“name”的值对字典列表进行排序`
+按关键字“name”中的值按降序排列字典列表“l”
+如何按Python中字典的值对字典列表进行排序？
+如何按Python中字典的值对字典列表进行排序？
+如何在Python（pandas）中按列中的引用对数据帧进行排序
+与字典“trans”中用“category”索引的列表中的“，”元素连接在一起`
+一串
+从restful服务“url”获取json数据
+从字符串“sents”列表中删除以“@$\t”开头的所有字符串，或`#`
+django按小时过滤
+先按“点”排序，然后按“时间”排序`
+将datetime对象`（1970，1，1）`转换为秒
+在中的文件扩展名前插入“\u suff”`long.file.name文件名.jpg`或者如果扩展名前面有``suff`替换为``a`。
+重新加载模块`module`
+将整数“number”转换为未赋值整数
+将列表“numlist”中的int值转换为float
+将数据帧“df”（不包括索引）写入csv文件
+将urllib无引号字符串“unescaped”转换为json数据“json\u data”`
+创建一个包含所有ascii字符作为其元素的列表
+将“newFileBytes”写入二进制文件“newFile”`
+python regex-检查string`string中是否有小写的大写字母`
+获取字典的最后一个键`dict`
+将行“hi there”写入文件`f`
+将行“hi there”写入文件`myfile`
+将行“Hello”写入文件`somefile.txt文件`
+将unicode字符串`s`转换为ascii
+Django获取与模型“authorizedMail”中的字段“added”关联的最大值`
+使用regex从字符串“text”中查找所有数字和点
+python regex从“text”中查找所有数字和点
+'执行脚本'脚本.ps1'使用'父进程'外壳
+按元组中的第三项对元组列表“b”排序
+使用pycassa获取Cassandra数据库“cf”中所有键的列表
+使用当前日期和时间创建日期时间
+如果列表还包含布尔项，则从列表“lst”中获取整数“1”的索引
+从列表中的每个数字中减去13`a`
+从C驱动器的目录内容中随机选择一个文件，`C:\\`
+获取numpy矩阵中绝对值最高的元素`x`
+获取文本中的所有URL`s`
+使用regex从字符串“document”匹配域不以“t”开头的URL
+拆分字符串`mystring`考虑空格“”
+以“r”模式打开文件“path”
+对列表中同一索引中的元素求和`data`
+向数组中添加新轴`a`

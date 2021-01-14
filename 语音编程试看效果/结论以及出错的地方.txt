@@ -1,0 +1,750 @@
+结果，对比的句子个数有：500, 一样的有：432, 正确率：0.864
+
+错误的结果展示如下：
+
+1 处于第7行
+
+中文：去掉字典中的None值`kwargs`
+
+
+正确的：res = dict((k, v) for k, v in kwargs.items() if v is not None)
+
+
+错误的：res = {k: v for k, v in list(kwargs.items()) if v is not None}
+
+
+2 处于第10行
+
+中文：查找系列“s1”和系列“s2”之间的交集数据`
+
+
+正确的：pd.Series(list(set(s1).intersection(set(s2))))
+
+
+错误的：pd.concat([1, 2.get_range(len(df) & 1)
+
+
+3 处于第20行
+
+中文：'运行脚本'你好，派瑞'带参数'htmlfilename.htm文件名'在终端上使用python可执行文件
+
+
+正确的：subprocess.call(['python.exe', 'hello.py', 'htmlfilename.htm'])
+
+
+错误的：os.system('Hello, {0}""".format(filename.html', open('filename.html'))
+
+
+4 处于第28行
+
+中文：通过HTTP下载文件“url”，并保存到“file\u name”`
+
+
+正确的：u = urllib.request.urlopen(url)[wrap]f = open(file_name, 'wb')[wrap]meta = u.info()[wrap]file_size = int(meta.getheaders('Content-Length')[0])[wrap]print(('Downloading: %s Bytes: %s' % (file_name, file_size)))[wrap]file_size_dl = 0[wrap]block_sz = 8192[wrap]while True:[wrap][tab]buffer = u.read(block_sz)[wrap][tab]if (not buffer):[wrap][tab][tab]break[wrap][tab]file_size_dl += len(buffer)[wrap][tab]f.write(buffer)[wrap][tab]status = ('%10d  [%3.2f%%]' % (file_size_dl, ((file_size_dl * 100.0) / file_size)))[wrap][tab]status = (status + (chr(8) * (len(status) + 1)))[wrap][tab]print(status, end=' ')[wrap]f.close()
+
+
+错误的：response = requests.get(url, stream=True)[wrap]with open('name')
+
+
+5 处于第30行
+
+中文：download a file url'over HTTP
+
+
+正确的：r = requests.get(url)
+
+
+错误的：wload(url)
+
+
+6 处于第40行
+
+中文：创建大小为`（3,3,3）的零的三维数组`
+
+
+正确的：numpy.zeros((3, 3, 3))
+
+
+错误的：np.where((3, 0, 1, 3))
+
+
+7 处于第50行
+
+中文：从字符串“灯、包、镜”中删除子字符串“包”
+
+
+正确的：print('lamp, bag, mirror'.replace('bag,', ''))
+
+
+错误的：with open('filename', 'w')[wrap]a.duplicates()
+
+
+8 处于第60行
+
+中文：如何在Flask视图中获取url参数
+
+
+正确的：request.args['myParam']
+
+
+错误的：sys.setsklast()[0]
+
+
+9 处于第70行
+
+中文：按最后出现的字符拆分字符串“x”`-`
+
+
+正确的：print(x.rpartition('-')[0])
+
+
+错误的：re.split('-', 1)[0-1]
+
+
+10 处于第80行
+
+中文：Google App Engine执行GQL查询'SELECT*FROM Schedule WHERE station=$1'，带参数`foo.key键()`
+
+
+正确的：db.GqlQuery('SELECT * FROM Schedule WHERE station = $1', foo.key())
+
+
+错误的：c.execute('SELECT * FROM foo WHERE key1 ERECT * FROM foo WHERECT
+
+
+11 处于第90行
+
+中文：将由特殊字符“\n”连接的列表“行”的元素写入文件“myfile”`
+
+
+正确的：myfile.write('\n'.join(lines))
+
+
+错误的：lst = [line.split('\n', 1)[0], open('myfile.txt')]
+
+
+12 处于第100行
+
+中文：将字符串“text”放低，并将非字母数字字符从空格中删除
+
+
+正确的：re.sub('[^\\sa-zA-Z0-9]', '', text).lower().strip()
+
+
+错误的：re.sub('(?!\\s)[\\W_]', '', text).lower().strip()
+
+
+13 处于第103行
+
+中文：在数组“x”和“y”的matplotlib标签中下标文本“H20”，下标为“2”。
+
+
+正确的：plt.plot(x, y, label='$H_2O$')
+
+
+错误的：plt.plot(x, y, label='H\u2082O')
+
+
+14 处于第110行
+
+中文：在python中用分隔符拆分字符串
+
+
+正确的：[x.strip() for x in '2.MATCHES $$TEXT$$ STRING'.split('$$TEXT$$')]
+
+
+错误的：re.split('([(-)\\1)
+
+
+15 处于第112行
+
+中文：检查目录“path”是否存在，必要时创建它
+
+
+正确的：try:[wrap][tab]os.makedirs(path)[wrap]except OSError:[wrap][tab]if (not os.path.isdir(path)):[wrap][tab][tab]raise
+
+
+错误的：distutils.dir_util.mkpath(path)
+
+
+16 处于第114行
+
+中文：检查目录“path”是否存在，必要时创建它
+
+
+正确的：try:[wrap][tab]os.makedirs(path)[wrap]except OSError as exception:[wrap][tab]if (exception.errno != errno.EEXIST):[wrap][tab][tab]raise
+
+
+错误的：distutils.dir_util.mkpath(path)
+
+
+17 处于第120行
+
+中文：通过连接来自矩阵A和矩阵B的数据来创建新的矩阵对象
+
+
+正确的：np.concatenate((A, B))
+
+
+错误的：numpy.concatenate([np.makenfolder()
+
+
+18 处于第124行
+
+中文：计算列表中项目的出现次数`l`
+
+
+正确的：Counter(l)
+
+
+错误的：[[x, l.count(x)] for x in set(l)]
+
+
+19 处于第126行
+
+中文：计算列表中项目的出现次数`l`
+
+
+正确的：dict(((x, l.count(x)) for x in set(l)))
+
+
+错误的：[[x, l.count(x)] for x in set(l)]
+
+
+20 处于第130行
+
+中文：获取与其字典中的值0不关联的最大键`x`
+
+
+正确的：(k for k, v in x.items() if v != 0)
+
+
+错误的：print(max(x, key=lambda x: x[1])
+
+
+21 处于第140行
+
+中文：将列表“t”转换为元组
+
+
+正确的：tuple(l)
+
+
+错误的：tuple(map(int, a))
+
+
+22 处于第150行
+
+中文：将原始字符串“raw\u string”转换为普通字符串
+
+
+正确的：raw_string.decode('string_escape')
+
+
+错误的：raw_braw_string.decode('unicode_escape')
+
+
+23 处于第160行
+
+中文：使用扩展切片从列表“b”获取列表项的反向
+
+
+正确的：[x[::-1] for x in b]
+
+
+错误的：print(''.join(reversed(b))
+
+
+24 处于第170行
+
+中文：创建一个包含扁平列表“[['a'、'B'、'C']、['D'、'E'、'F']、['G'、'H'、'I']]的列表`
+
+
+正确的：values = sum([['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']], [])
+
+
+错误的：list(map(tuple, [['A', 'B'], ['C', 'D']
+
+
+25 处于第177行
+
+中文：从字符串中提取url`myString`
+
+
+正确的：print(re.search('(?P<url>https?://[^\\s]+)', myString).group('url'))
+
+
+错误的：print(re.findall('(https?://[^\\s]+)', myString))
+
+
+26 处于第180行
+
+中文：在python中创建具有3行2列的多维数组“matrix”
+
+
+正确的：matrix = [[a, b], [c, d], [e, f]]
+
+
+错误的：matrix.update(2, 3))
+
+
+27 处于第190行
+
+中文：字符串“string”的检查字符是函数“predicate”的真谓词`
+
+
+正确的：all(predicate(x) for x in string)
+
+
+错误的：dition(x) for x in string.decode('cat')
+
+
+28 处于第200行
+
+中文：click a href button having text Send InMail`with selenium
+
+
+正确的：driver.findElement(By.linkText('Send InMail')).click()
+
+
+错误的：driver.find_element_by_link_text('Send InMail').click()
+
+
+29 处于第210行
+
+中文：删除列表中的重复项`abracadabra`
+
+
+正确的：list(OrderedDict.fromkeys('abracadabra'))
+
+
+错误的：list(set(a))
+
+
+30 处于第220行
+
+中文：获取已排序的dict键列表`d`
+
+
+正确的：sorted(d)
+
+
+错误的：sorted(d, key=d.index)
+
+
+31 处于第230行
+
+中文：“分析选项卡分隔的CSV文件”文本.txt'进入列表
+
+
+正确的：lol = list(csv.reader(open('text.txt', 'rb'), delimiter='\t'))
+
+
+错误的：with open('Stril') as f:[wrap][tab]pass
+
+
+32 处于第240行
+
+中文：运行r script'/usr/bin/Rscript--vanilla/pathto/MyrScript.r'
+
+
+正确的：subprocess.call('/usr/bin/Rscript --vanilla /pathto/MyrScript.r', shell=True)
+
+
+错误的：subprocess.call(['/usr/bin/Rscript', '--vanilla', '/pathto/MyrScript.r'])
+
+
+33 处于第250行
+
+中文：用字典中的值交换键`a`
+
+
+正确的：res = dict((v, k) for k, v in a.items())
+
+
+错误的：dict(x[1] for x in a)
+
+
+34 处于第260行
+
+中文：正则表达式，在字符串的中间找到“n”`
+
+
+正确的：re.findall('n(?<=[^n]n)n+(?=[^n])(?i)', s)
+
+
+错误的：re.sub('(?m)^[i][tab]pass
+
+
+35 处于第270行
+
+中文：读取不带换行符的文件
+
+
+正确的：[line.rstrip('\n') for line in file]
+
+
+错误的：sys.stdout.read()
+
+
+36 处于第273行
+
+中文：获取项目1在`testlist中的位置`
+
+
+正确的：for i in [i for (i, x) in enumerate(testlist) if (x == 1)]:[wrap][tab]pass
+
+
+错误的：[i for (i, x) in enumerate(testlist) if (x == 1)]
+
+
+37 处于第274行
+
+中文：获取项目1在`testlist中的位置`
+
+
+正确的：for i in (i for (i, x) in enumerate(testlist) if (x == 1)):[wrap][tab]pass
+
+
+错误的：[i for (i, x) in enumerate(testlist) if (x == 1)]
+
+
+38 处于第275行
+
+中文：获取项目1在`testlist中的位置`
+
+
+正确的：gen = (i for (i, x) in enumerate(testlist) if (x == 1))[wrap]for i in gen:[wrap][tab]pass
+
+
+错误的：[i for (i, x) in enumerate(testlist) if (x == 1)]
+
+
+39 处于第277行
+
+中文：获取项“element”在列表“testlist”中的位置`
+
+
+正确的：try:[wrap][tab]print(testlist.index(element))[wrap]except ValueError:[wrap][tab]pass
+
+
+错误的：print(testlist.index(element))
+
+
+40 处于第290行
+
+中文：将元组“（'aa'，），（'bb'，），（'cc'，）”的元组转换为一行中的列表
+
+
+正确的：map(lambda a: a[0], (('aa',), ('bb',), ('cc',)))
+
+
+错误的：map(list, cc.items())))
+
+
+41 处于第300行
+
+中文：将键“a”添加到值为1的字典“data”
+
+
+正确的：data.update({'a': 1, })
+
+
+错误的：data.update(a=1)
+
+
+42 处于第301行
+
+中文：将键“a”添加到值为1的字典“data”
+
+
+正确的：data.update(dict(a=1))
+
+
+错误的：data.update(a=1)
+
+
+43 处于第310行
+
+中文：在dataframe`df的“text”列中计算最频繁的100个单词`
+
+
+正确的：Counter(' '.join(df['text']).split()).most_common(100)
+
+
+错误的：df['text'].str.contains(100)), axis=1)
+
+
+44 处于第320行
+
+中文：匹配正则表达式“\\（*？）\\)|（\\w）'带字符串'（zyx）bc'
+
+
+正确的：re.findall('\\((.*?)\\)|(\\w)', '(zyx)bc')
+
+
+错误的：re.match('(.*?|*)', s)bc]
+
+
+45 处于第330行
+
+中文：反转字典中的键和值`myDictionary`
+
+
+正确的：{i[1]: i[0] for i in list(myDictionary.items())}
+
+
+错误的：res = {k: v for k, v in list(myDict.items())}
+
+
+46 处于第334行
+
+中文：检查对象“o”是否为字符串
+
+
+正确的：(type(o) is str)
+
+
+错误的：isinstance(o, str)
+
+
+47 处于第340行
+
+中文：将列表“mylog”中的项附加到“list1”`
+
+
+正确的：for line in mylog:[wrap][tab]list1.append(line)
+
+
+错误的：list1.extend(mylog)
+
+
+48 处于第350行
+
+中文：在每个空格处拆分字符串“input”，后跟一个大写字母
+
+
+正确的：re.split('[ ](?=[A-Z])', input)
+
+
+错误的：re.split('\\')[0-1])
+
+
+49 处于第360行
+
+中文：计算字典文件中的键数`
+
+
+正确的：len(set(open(yourdictfile).read().split()))
+
+
+错误的：sum(d.values())
+
+
+50 处于第379行
+
+中文：按值反向排序计数器`x`
+
+
+正确的：sorted(list(x.items()), key=lambda pair: pair[1], reverse=True)
+
+
+错误的：sorted(x, key=x.get, reverse=True)
+
+
+51 处于第380行
+
+中文：将numpy数组“b”附加到numpy数组“a”
+
+
+正确的：np.vstack((a, b))
+
+
+错误的：a.extend(b)
+
+
+52 处于第383行
+
+中文：numpy沿第一个轴连接两个数组“a”和“b”
+
+
+正确的：c = np.r_[(a[None, :], b[None, :])]
+
+
+错误的：print(concatenate((a, b), axis=0))
+
+
+53 处于第384行
+
+中文：numpy沿第一个轴连接两个数组“a”和“b”
+
+
+正确的：np.array((a, b))
+
+
+错误的：print(concatenate((a, b), axis=0))
+
+
+54 处于第390行
+
+中文：对列表“c2”进行排序，使第三行排在第一位
+
+
+正确的：c2.sort(key=lambda row: row[2])
+
+
+错误的：sorted(c2, key=create.get, reverse=True)
+
+
+55 处于第391行
+
+中文：在Python中排序列表
+
+
+正确的：c2.sort(key=lambda row: (row[2], row[1], row[0]))
+
+
+错误的：c2.sort(key=lambda row: (row[2], row[1]))
+
+
+56 处于第400行
+
+中文：将项目“12”插入列表“my'u list”
+
+
+正确的：my_list.append(12)
+
+
+错误的：my_list.insert(my_list)
+
+
+57 处于第420行
+
+中文：如何在python中删除字符串中的所有字符实例？
+
+
+正确的："""""".join([char for char in 'it is icy' if char != 'i'])
+
+
+错误的：re.sub('[^A-Za-zA-Z]+', '', text)
+
+
+58 处于第427行
+
+中文：查找“/mydir”目录下扩展名为“.txt”的所有文件
+
+
+正确的：os.chdir('/mydir')[wrap]for file in glob.glob('*.txt'):[wrap][tab]pass
+
+
+错误的：for file in os.listdir('/mydir'):[wrap][tab]if file.endswith('.txt'):[wrap][tab][tab]pass
+
+
+59 处于第429行
+
+中文：查找“/mydir”目录下扩展名为“.txt”的所有文件
+
+
+正确的：for (root, dirs, files) in os.walk('/mydir'):[wrap][tab]for file in files:[wrap][tab][tab]if file.endswith('.txt'):[wrap][tab][tab][tab]pass
+
+
+错误的：for file in os.listdir('/mydir'):[wrap][tab]if file.endswith('.txt'):[wrap][tab][tab]pass
+
+
+60 处于第430行
+
+中文：打印不带图例的数据框`df`
+
+
+正确的：df.plot(legend=False)
+
+
+错误的：print('\n')
+
+
+61 处于第431行
+
+中文：循环IP地址范围“192.168.x.x”
+
+
+正确的：for i in range(256):[wrap][tab]for j in range(256):[wrap][tab][tab]ip = ('192.168.%d.%d' % (i, j))[wrap][tab][tab]print(ip)
+
+
+错误的：for (i, j) in product(list(range(256)), list(range(256))):[wrap][tab]pass
+
+
+62 处于第433行
+
+中文：循环IP地址范围“192.168.x.x”
+
+
+正确的：generator = iter_iprange('192.168.1.1', '192.168.255.255', step=1)
+
+
+错误的：for (i, j) in product(list(range(256)), list(range(256))):[wrap][tab]pass
+
+
+63 处于第440行
+
+中文：获取numpy数组中每两个连续值的平均值的数组`x`
+
+
+正确的：x[:-1] + (x[1:] - x[:-1]) / 2
+
+
+错误的：np.where(np.mean(x, axis=1).mean(axis=1).mean()
+
+
+64 处于第450行
+
+中文：按空格拆分字符串`text`
+
+
+正确的：text.split()
+
+
+错误的：text.split(' ', re.findall('\\s+|\\S+', text)
+
+
+65 处于第460行
+
+中文：如何按Python中字典的值对字典列表进行排序？
+
+
+正确的：list_of_dicts.sort(key=operator.itemgetter('name'))
+
+
+错误的：list_of_dicts.sort(key=operator.itemgetter('age'))
+
+
+66 处于第470行
+
+中文：在中的文件扩展名前插入“\u suff”`long.file.name文件名.jpg`或者如果扩展名前面有``suff`替换为``a`。
+
+
+正确的：re.sub('(\\_a)?\\.([^\\.]*)$', '_suff.\\2', 'long.file.name.jpg')
+
+
+错误的：os.path.splitext(os.path.rstrip('\n'))
+
+
+67 处于第480行
+
+中文：将行“hi there”写入文件`f`
+
+
+正确的：print('hi there', file=f)
+
+
+错误的：f = open('hi there\n')[wrap]f.write('hi there\n')[wrap]f.close()
+
+
+68 处于第500行
+
+中文：向数组中添加新轴`a`
+
+正确的：a[:, (np.newaxis)]
+
+错误的：plt.array(a, b))
+
+

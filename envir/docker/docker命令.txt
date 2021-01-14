@@ -1,0 +1,13 @@
+nvidia-docker run -it --name wangyechao_audioProgram2  -p 6711:5000  -v /home/docker/wangyechao/data:/data ubuntu:16.04 /bin/bash
+
+
+nvidia-docker run -it --name wangyechao_test_del  -p 6711:5000  -v /home/docker/wangyechao/data:/data tensorflow/tensorflow:1.13.1-gpu-py3 /bin/bash
+
+nvidia-docker run -it --name wangyechao_test_py36_addT2T  -p 6714:5000  -v /home/docker/wangyechao/data:/data python:3.6 /bin/bash
+
+
+pip install tensor2tensor[tensorflow_gpu]
+
+
+
+nvidia-docker run -it --name wangyechao_test_audioProgram  -p 6715:5000  -v /home/docker/wangyechao/data:/data tensorflow/tensorflow:1.15.0-gpu-py3 /bin/bash

@@ -11,7 +11,7 @@ App({
         var app = getApp()
         console.log('login:code', res.code)          //发送请求          
         wx.request({            
-          url: 'https://www.iais.group:5017/getOpenid', //接口地址            
+          url: 'https://www.iais.group:6719/getOpenid', //接口地址            
           data: {'code': res.code},            
           header: {'content-type': 'application/json'},            
         success: function (res) {              
@@ -72,8 +72,8 @@ App({
     backPort: 5017,
     openid: '',
     unionid: '',
-    rotBackIp:'www.iais.group',
-    rotBackPort:'5017',
+    rotBackIp: 'www.iais.group',
+    rotBackPort:'6719',
     showJsonStr:''
   }
 })

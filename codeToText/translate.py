@@ -132,7 +132,40 @@ class CodeToData():
         rightString = re.sub(pattern,self.addVariableName,rightString,0)
         print(text + ":"+leftText+rightString)
         return leftText+rightString
+    
+    def templateOfCalculate(self, text):
+        # 判断类型
+        # 处理右边的字符串
+        text = text.replace('+','加')
 
+        text = text.replace('-', '减')
+        text = text.replace('/', '除以')
+        text = text.replace('*', '乘以')
+        # 处理括号
+        while(text.find(')') != -1):
+            index = text.find(')')
+            # 反向遍历找到(
+            i = index
+            while i >= 0:
+                if(text[i] =='('):
+                    for j in range(i,index-1):
+                        tmplist1 = list(text)
+                        tmplist1[j] = tmplist1[j+1]
+                        text = ''.join(tmplist1)
+                    tmplist1 = list(text)
+                    tmplist1[index-1] = '的'
+                    tmplist1[index] = '值'
+                    text = ''.join(tmplist1)
+                    break
+                i = i - 1
+        # 处理[]
+
+        #在变量前面加上变量二字
+        pattern = re.compile('[a-zA-Z]+')
+        text = re.sub(pattern,self.addVariableName,text,0)
+        print(text + ":"++text)
+        return
+    
     def translateToText(self,fileContent):
         translateResult = []
         for item in fileContent:
@@ -147,7 +180,10 @@ class CodeToData():
                 if label == 2:
                     res = self.templateOfCalculate(item)
                     translateResult.append(res)
-                    
+                # 判断类型
+                if label == 3:
+                    res = self.templateOfJudge(item)
+                    translateResult.append(res)
 
     def work(self):
         # 首先获取所有待转换文件

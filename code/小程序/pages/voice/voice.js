@@ -113,29 +113,36 @@ Page({
 
     }
     else {
+      wx.showLoading({
+        title: '正在转换',
 
+      })
       wx.request({
-        url: 'https://' + app.globalData.rotBackIp + ':' + app.globalData.rotBackPort + '/voiceSend',
+        url: 'https://' + app.globalData.rotBackIp + ':' + app.globalData.rotBackPort + '/dataSend',
         data: {
           seqId: utils.wxuuid(),
           openId: app.globalData.openid,
           message: this.data.content,
-          language:this.choices[choiceIndex]
+          language: 'python'
         },
         method: 'POST',
         header: {
           'content-type': 'application/json' // 默认值
         },
         success(res) {
+          wx.hideLoading();
           console.log("send " + ", 返回:")
           console.log(res.data)
           var ret_code = res.data.ret_code
           var ret_info = res.data.info
-          if (ret_code == 0) {
+          if (ret_code == 1) {
             wx.showModal({
               title: '执行成功',
               content: ret_info,
               showCancel: false
+            })
+            flag.setData({
+              codeContent: res.data.text
             })
           }
           else {
@@ -148,6 +155,7 @@ Page({
           
         },
         fail(res) {
+          wx.hideLoading();
           wx.showModal({
             title: '错误提示',
             content: '服务器未响应，请稍候再试',

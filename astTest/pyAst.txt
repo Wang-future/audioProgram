@@ -1,0 +1,13 @@
+Module
+(
+	body=[
+			Assign(
+					targets=[Name(id='ial', ctx=Store())], 
+					value=Constant(value=10, kind=None), 
+					type_comment=None
+				)
+		], 
+	type_ignores=[]
+
+)
+			

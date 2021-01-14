@@ -1,0 +1,23 @@
+t2t-datagen --t2t_usr_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain --problem=my_problem --data_dir=./data
+
+
+t2t-trainer  --t2t_usr_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain --data_dir=./data --problem=my_problem --model=transformer --hparams_set=transformer_small --hparams="batch_size=512"  --schedule=continuous_train_and_eval --output_dir=./newTrain --train_steps=250000  --worker-gpu=1
+
+decord:
+ch_new_question_conala-test
+t2t-decoder  --t2t_usr_dir=data/project/audioProgram/code/audioProgram/transformerModel/selfTrain --problem=my_problem  --data_dir=./data 
+   --model=$MODEL \
+   --hparams_set=$HPARAMS \
+   --output_dir=$TRAIN_DIR \
+   --decode_from_file=$BASEPATH/temp_dir/test.en.seg     
+   --decode_to_file=./testData/ch_new_question_conala-test
+   --checkpoint_path=./newTrain/model.ckpt-250000            
+
+
+ t2t-decoder --t2t_usr_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain --problem=my_problem  --data_dir=./data  --model=transformer --hparams_set=transformer_small --output_dir=./newTrain --decode_hparams="beam_size=5,alpha=0.6"  --decode_from_file=./testData/ch_new_question_conala-test.txt --decode_to_file=./decode_out/test_out.txt 
+
+
+t2t-exporter --t2t_usr_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain --problem=my_problem --data_dir=./data --model=transformer --hparams_set=transformer_small --output_dir=./newTrain
+
+部署
+tensorflow_model_base_server  --port=5000  --model_name=text2code_model --model_base_path=./newTrain/export/Servo

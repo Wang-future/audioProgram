@@ -14,7 +14,7 @@
           <text>转换：{{choices[choiceIndex]}}</text>
         </view>
     </picker>
-    <textarea class='yuyinCon' bindinput="conInput" placeholder='转换内容' value='{{content}}' ></textarea>
+    <textarea class='yuyinCon' bindinput="conInput" placeholder='转换内容' value='{{codeContent}}' ></textarea>
   </view>
   </view>
   <view class=''>
