@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d89048db-7914-4a57-9e8f-14ca7b3ec9f2" name="Default Changelist" comment="" />
+    <list default="true" id="d89048db-7914-4a57-9e8f-14ca7b3ec9f2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/audioProgram/bkFalsk.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/audioProgram/bkFalsk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/audioProgram/transformerModel/selfTrain/训练过程.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/audioProgram/transformerModel/selfTrain/训练过程.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/小程序/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/code/小程序/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/小程序/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/code/小程序/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/小程序/pages/voice/voice.js" beforeDir="false" afterPath="$PROJECT_DIR$/code/小程序/pages/voice/voice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/小程序/pages/voice/voice.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/code/小程序/pages/voice/voice.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/envir/docker/docker环境.docx" beforeDir="false" afterPath="$PROJECT_DIR$/envir/docker/docker环境.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +25,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bpkObHNLjLWJGaf0ZNXfrJSnXH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -22,33 +36,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../project/github/jd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.dele">
-    <configuration name="actor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="audioProgram" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/audioProgram" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/audioProgram/actor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.test">
     <configuration name="dele" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="audioProgram" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,6 +78,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/audioProgram/ruleParser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="audioProgram" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/audioProgram" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/audioProgram/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.dele" />
         <item itemvalue="Python.testLog" />
         <item itemvalue="Python.ruleParser" />
         <item itemvalue="Python.textParser (1)" />
-        <item itemvalue="Python.actor" />
       </list>
     </recent_temporary>
   </component>
@@ -170,6 +185,7 @@
       <workItem from="1600172868327" duration="16000" />
       <workItem from="1600325831800" duration="40000" />
       <workItem from="1600325916587" duration="10318000" />
+      <workItem from="1611553957312" duration="4211000" />
     </task>
     <servers />
   </component>
@@ -177,38 +193,27 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="528" y="199" key="FileChooserDialogImpl" timestamp="1600617769526">
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1611554014317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="528" y="199" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600617769526" />
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom" timestamp="1596444237837">
+    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1611554014317" />
+    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1611554014317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596444237837" />
-    <state width="1493" height="201" key="GridCell.Tab.0.center" timestamp="1596444237837">
+    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1611554014317" />
+    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1611554014317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596444237837" />
-    <state width="1493" height="201" key="GridCell.Tab.0.left" timestamp="1596444237837">
+    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1611554014317" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1611554014317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596444237837" />
-    <state width="1493" height="201" key="GridCell.Tab.0.right" timestamp="1596444237837">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596444237837" />
-    <state x="368" y="57" key="SettingsEditor" timestamp="1597904507722">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="368" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1597904507722" />
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog" timestamp="1600910732150">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="0" y="0" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600910732150" />
+    <state width="1493" height="201" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1611554014317" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/audioProgram$ruleParser.coverage" NAME="ruleParser Coverage Results" MODIFIED="1590316589373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/audioProgram" />
     <SUITE FILE_PATH="coverage/audioProgram$testLog.coverage" NAME="testLog Coverage Results" MODIFIED="1593248857171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/audioProgram" />
+    <SUITE FILE_PATH="coverage/audioProgram$test.coverage" NAME="test Coverage Results" MODIFIED="1611554014307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/audioProgram" />
     <SUITE FILE_PATH="coverage/audioProgram$actor.coverage" NAME="actor Coverage Results" MODIFIED="1590229137766" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/audioProgram" />
     <SUITE FILE_PATH="coverage/audioProgram$ltpParser.coverage" NAME="ltpParser Coverage Results" MODIFIED="1590121431118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/audioProgram" />
     <SUITE FILE_PATH="coverage/audioProgram$dele.coverage" NAME="dele Coverage Results" MODIFIED="1596299434076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

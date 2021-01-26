@@ -9,11 +9,11 @@
   </view>
   <view>
   <view class="row-wrap">
-    <picker bindchange="bindCasPickerChange" value="{{choiceIndex1}}" range="{{choices}}">
+    <!-- <picker bindchange="bindCasPickerChange" value="{{choiceIndex1}}" range="{{choices}}">
         <view>
           <text>转换：{{choices[choiceIndex]}}</text>
         </view>
-    </picker>
+    </picker> -->
     <textarea class='yuyinCon' bindinput="conInput" placeholder='转换内容' value='{{codeContent}}' ></textarea>
   </view>
   </view>

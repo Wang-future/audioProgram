@@ -6,8 +6,10 @@ import json
 import time
 import requests
 sys.path.append(r'../auxClass/')
+sys.path.append(r'./')
 from wangLog import log
 from textToCode import TextToCode
+from textCodePredict import TextCodePredict
 defaultencoding = 'utf-8'
 if sys.getdefaultencoding() != defaultencoding:
     reload(sys)
@@ -15,6 +17,7 @@ if sys.getdefaultencoding() != defaultencoding:
 
 # global
 app = Flask(__name__)
+mTextCodePredict = TextCodePredict()
 # 辅助函数
 def todayDate():
     return time.strftime("%Y-%m-%d",time.localtime(time.time()))
@@ -53,28 +56,32 @@ def dataSend():
     message = data["message"] #request.json.get('message')
     language = data["language"] #request.json.get('language')
     log.info('seqId:' + seqId + ', message:' + message + ', language:'+language)
-
-    myTextToCode = TextToCode('./useByTextToCode/input.txt','./useByTextToCode/output.txt')
-    # retList = myTextToCode.textToCode(message)
-    #  用第一个代替
-
-    # output
     retDict = {}
     retDict['seqId'] = seqId
-    retDict['ret_code'] = 2
+    retDict['ret_code'] = 0
 
-    if message:
-        # senList, carryResList = actor.toCode(seqId,message)
-        # retDict['ret_code'] = carryResList[0]
-        # retDict['text'] = carryResList[1]
-        # retDict['senList'] = senList
-        retList = myTextToCode.textToCode(message)
-        retDict['text'] = retList[0]
-        retDict['ret_code'] = 1
+    # myTextToCode = TextToCode('./useByTextToCode/input.txt','./useByTextToCode/output.txt')
+    # output
+    # retDict = {}
+    # retDict['seqId'] = seqId
+    # retDict['ret_code'] = 2
 
-    else:
-        retDict['ret_code'] = 2
-        retDict['text'] = "你的输入为空， 执行成功"
+    # if message:
+    #     # senList, carryResList = actor.toCode(seqId,message)
+    #     # retDict['ret_code'] = carryResList[0]
+    #     # retDict['text'] = carryResList[1]
+    #     # retDict['senList'] = senList
+    #     retList = myTextToCode.textToCode(message)
+    #     retDict['text'] = retList[0]
+    #     retDict['ret_code'] = 1
+
+    # else:
+    #     retDict['ret_code'] = 2
+    #     retDict['text'] = "你的输入为空， 执行成功"
+
+    ret_from = mTextCodePredict.textCode(message, seqId)
+    retDict['ret_code'] = ret_from['ret_code']
+    retDict['text'] = ret_from['text']
     return retDict
 
 
@@ -86,6 +93,6 @@ def getCourtInformation():
     return data
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, ssl_context=('./cer/secret.pem', './cer/secret.key'))
+    app.run(host='0.0.0.0', port=6501, ssl_context=('./cer/secret.pem', './cer/secret.key'))
 
 

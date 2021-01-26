@@ -1,0 +1,1 @@
+docker run -dit -p 6700:8501 -p 6701:5000 -v /home/docker/wangyechao/data:/data  --name wangyechao_t2tModel__audioProgram tensorflow/serving

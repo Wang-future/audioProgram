@@ -134,7 +134,7 @@ Page({
           console.log("send " + ", 返回:")
           console.log(res.data)
           var ret_code = res.data.ret_code
-          var ret_info = res.data.info
+          var ret_info = res.data.text
           if (ret_code == 1) {
             wx.showModal({
               title: '执行成功',

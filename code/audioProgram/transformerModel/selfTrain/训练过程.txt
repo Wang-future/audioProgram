@@ -20,4 +20,6 @@ t2t-decoder  --t2t_usr_dir=data/project/audioProgram/code/audioProgram/transform
 t2t-exporter --t2t_usr_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain --problem=my_problem --data_dir=./data --model=transformer --hparams_set=transformer_small --output_dir=./newTrain
 
 部署
-tensorflow_model_base_server  --port=5000  --model_name=text2code_model --model_base_path=./newTrain/export/Servo
+tensorflow_model_server  --rest_api_port=8501  --model_name=text2code_model --model_base_path=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain/newTrain/export/Servo
+
+t2t-query-server --server=*.*.*.*:5000 --servable_name=text2code_model --problem=my_problem --data_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain/data --t2t_usr_dir=/data/project/audioProgram/code/audioProgram/transformerModel/selfTrain
