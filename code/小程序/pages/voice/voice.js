@@ -118,7 +118,7 @@ Page({
 
       })
       wx.request({
-        url: 'https://' + app.globalData.rotBackIp + ':' + app.globalData.rotBackPort + '/dataSend',
+        url: 'https://' + app.globalData.backIp + ':' + app.globalData.backPort + '/dataSend',
         data: {
           seqId: utils.wxuuid(),
           openId: app.globalData.openid,
