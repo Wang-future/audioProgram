@@ -74,6 +74,8 @@ App({
     unionid: '',
     rotBackIp: 'abc.autosem.net',
     rotBackPort:'6502',
-    showJsonStr:''
+    showJsonStr:'',
+    pyblockIp:'abc.autosem.net',
+    pyblockPort:"6505"
   }
 })

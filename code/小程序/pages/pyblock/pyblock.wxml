@@ -1,0 +1,3 @@
+<!--pages/pyblock.wxml-->
+<web-view src="http://{{ip}}:{{port}}/blockly"></web-view>
+<!--web-view src="http://abc.autosem.net:6505/blockly/"></web-view-->
