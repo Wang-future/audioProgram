@@ -65,7 +65,7 @@ def _get_vqa_v2_annotations(directory,
             if not is_within_directory(path, member_path):
                 raise Exception("Attempted Path Traversal in Tar File")
     
-        tar.extractall(path, members, numeric_owner) 
+        tar.extractall(path, members, numeric_owner=numeric_owner) 
         
     
     safe_extract(annotation_tar, directory)
@@ -104,7 +104,7 @@ def _get_vqa_v2_image_feature_dataset(
             if not is_within_directory(path, member_path):
                 raise Exception("Attempted Path Traversal in Tar File")
     
-        tar.extractall(path, members, numeric_owner) 
+        tar.extractall(path, members, numeric_owner=numeric_owner) 
         
     
     safe_extract(feature_tar, directory)
